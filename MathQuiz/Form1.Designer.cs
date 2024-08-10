@@ -123,7 +123,6 @@
             this.Sum.Name = "Sum";
             this.Sum.Size = new System.Drawing.Size(100, 35);
             this.Sum.TabIndex = 1;
-            this.Sum.ValueChanged += new System.EventHandler(this.Sum_ValueChanged);
             // 
             // difference
             // 
@@ -133,7 +132,6 @@
             this.difference.Name = "difference";
             this.difference.Size = new System.Drawing.Size(100, 35);
             this.difference.TabIndex = 2;
-            this.difference.ValueChanged += new System.EventHandler(this.difference_ValueChanged);
             // 
             // label2
             // 
@@ -223,7 +221,6 @@
             this.timesLeftLabel.TabIndex = 12;
             this.timesLeftLabel.Text = "?";
             this.timesLeftLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.timesLeftLabel.Click += new System.EventHandler(this.label11_Click);
             // 
             // quotient
             // 
@@ -263,7 +260,6 @@
             this.dividedRightLabel.TabIndex = 18;
             this.dividedRightLabel.Text = "?";
             this.dividedRightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.dividedRightLabel.Click += new System.EventHandler(this.label14_Click);
             // 
             // dividedLeftLabel
             // 
@@ -285,6 +281,7 @@
             this.startButton.TabIndex = 0;
             this.startButton.Text = "Start the quiz";
             this.startButton.UseVisualStyleBackColor = true;
+            this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
             // Form1
             // 
