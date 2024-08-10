@@ -62,7 +62,7 @@ namespace MathQuiz
             // 'sum' is the name of the NumericUpDown control.
             // This step makes sure its value is zero before
             // adding any values to it.
-            sum.Value = 0;
+            Sum.Value = 0;
 
             // Fill in the subtraction problem.
             minuend = randomizer.Next(1, 101);
