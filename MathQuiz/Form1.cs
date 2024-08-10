@@ -17,5 +17,14 @@ namespace MathQuiz
             InitializeComponent();
         }
 
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
