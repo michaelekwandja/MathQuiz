@@ -50,6 +50,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.dividedRightLabel = new System.Windows.Forms.Label();
             this.dividedLeftLabel = new System.Windows.Forms.Label();
+            this.startButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Sum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.difference)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.product)).BeginInit();
@@ -121,16 +122,18 @@
             this.Sum.MaximumSize = new System.Drawing.Size(100, 0);
             this.Sum.Name = "Sum";
             this.Sum.Size = new System.Drawing.Size(100, 35);
-            this.Sum.TabIndex = 6;
+            this.Sum.TabIndex = 1;
+            this.Sum.ValueChanged += new System.EventHandler(this.Sum_ValueChanged);
             // 
             // difference
             // 
             this.difference.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.difference.Location = new System.Drawing.Point(314, 124);
+            this.difference.Location = new System.Drawing.Point(314, 134);
             this.difference.MaximumSize = new System.Drawing.Size(100, 0);
             this.difference.Name = "difference";
             this.difference.Size = new System.Drawing.Size(100, 35);
-            this.difference.TabIndex = 11;
+            this.difference.TabIndex = 2;
+            this.difference.ValueChanged += new System.EventHandler(this.difference_ValueChanged);
             // 
             // label2
             // 
@@ -179,7 +182,7 @@
             this.product.MaximumSize = new System.Drawing.Size(100, 0);
             this.product.Name = "product";
             this.product.Size = new System.Drawing.Size(100, 35);
-            this.product.TabIndex = 16;
+            this.product.TabIndex = 3;
             // 
             // label8
             // 
@@ -229,7 +232,7 @@
             this.quotient.MaximumSize = new System.Drawing.Size(100, 0);
             this.quotient.Name = "quotient";
             this.quotient.Size = new System.Drawing.Size(100, 35);
-            this.quotient.TabIndex = 21;
+            this.quotient.TabIndex = 4;
             // 
             // label12
             // 
@@ -272,11 +275,23 @@
             this.dividedLeftLabel.Text = "?";
             this.dividedLeftLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // startButton
+            // 
+            this.startButton.AutoSize = true;
+            this.startButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.startButton.Location = new System.Drawing.Point(164, 300);
+            this.startButton.Name = "startButton";
+            this.startButton.Size = new System.Drawing.Size(127, 34);
+            this.startButton.TabIndex = 0;
+            this.startButton.Text = "Start the quiz";
+            this.startButton.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 361);
+            this.Controls.Add(this.startButton);
             this.Controls.Add(this.quotient);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label13);
@@ -335,6 +350,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label dividedRightLabel;
         private System.Windows.Forms.Label dividedLeftLabel;
+        private System.Windows.Forms.Button startButton;
     }
 }
 

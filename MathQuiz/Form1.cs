@@ -26,5 +26,16 @@ namespace MathQuiz
         {
 
         }
+
+        private void difference_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Sum_ValueChanged(object sender, EventArgs e)
+        {
+
+
+        }
     }
 }
