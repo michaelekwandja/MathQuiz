@@ -125,6 +125,7 @@
             this.Sum.Name = "Sum";
             this.Sum.Size = new System.Drawing.Size(100, 35);
             this.Sum.TabIndex = 1;
+            this.Sum.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // difference
             // 
@@ -287,7 +288,6 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
